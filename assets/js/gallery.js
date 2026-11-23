@@ -4,8 +4,10 @@
   const dialog = document.getElementById("lightbox");
   if (!dialog || typeof dialog.showModal !== "function") return;
 
-  const big = dialog.querySelector("img");
+  
   const caption = dialog.querySelector("p");
+  const big = document.createElement("img");
+  dialog.insertBefore(big, caption);
 
   document.querySelectorAll(".gallery .photo").forEach((btn) => {
     btn.addEventListener("click", () => {
