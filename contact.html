@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Nikos Kospanos</title>
+  <meta name="description" content="Contact Nikos Kospanos about jobs, internships or collaborations.">
+  <meta name="author" content="Nikos Kospanos">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Contact — Nikos Kospanos">
+  <meta property="og:description" content="Contact Nikos Kospanos about jobs, internships or collaborations.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">NK</span>
+        <span class="brand-text">
+          <span class="brand-name">Nikos Kospanos</span>
+          <span class="brand-role">Computer Engineering Student</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>For jobs, internships or collaborations, email me or use the form. I usually reply within two working days.</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:1.5rem">
+      <div class="container contact-grid">
+        <ul class="contact-list">
+          <li><span class="label">Email</span><a href="mailto:kospanosnikos@gmail.com">kospanosnikos@gmail.com</a></li>
+          <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/kospanosnikolaos/" target="_blank" rel="noopener">linkedin.com/in/kospanosnikolaos</a></li>
+          <li><span class="label">GitHub</span><a href="https://github.com/kosp1515" target="_blank" rel="noopener">github.com/kosp1515</a></li>
+          <li><span class="label">Location</span><span class="value">Thessaloniki, Greece</span></li>
+        </ul>
+
+        <form class="form card" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
+            <div class="error" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="150">
+            <div class="error" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" maxlength="150">
+            <div class="error" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required maxlength="2000"></textarea>
+            <div class="hint"><span id="count">0</span> / 2000</div>
+            <div class="error" aria-live="polite"></div>
+          </div>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="status" id="status" role="status" aria-live="polite"></div>
+          <div><button class="btn btn-primary" type="submit" id="send">Send message</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Nikos Kospanos · Thessaloniki, Greece</p>
+      <ul class="footer-links">
+        <li><a href="mailto:kospanosnikos@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/kospanosnikolaos/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/kosp1515" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
