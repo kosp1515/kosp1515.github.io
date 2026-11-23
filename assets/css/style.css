@@ -288,8 +288,8 @@ p  { margin: 0 0 1em; }
 .lightbox img { max-width: 92vw; max-height: 84vh; border-radius: 6px; margin: auto; }
 .lightbox p { color: #e2e8f0; text-align: center; margin: .75rem 0 0; }
 .lightbox-close {
-  position: fixed; top: 1rem; right: 1rem; background: #fff; color: var(--ink);
-  border: 0; border-radius: 8px; padding: .4rem .8rem; font: inherit; font-weight: 600; cursor: pointer;
+  position: fixed; top: 1rem; right: 1rem; background: var(--bg); color: var(--ink);
+  border: 1 px solid var(--line); border-radius: 8px; padding: .4rem .8rem; font: inherit; font-weight: 600; cursor: pointer;
 }
 
 /* ---------- Contact ---------- */
