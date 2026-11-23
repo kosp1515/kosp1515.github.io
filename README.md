@@ -1,3 +1,5 @@
+![CI](https://github.com/kosp1515/kosp1515.github.io/actions/workflows/ci.yml/badge.svg)
+
 # Nikos Kospanos — Portfolio
 
 Static website (HTML, CSS, JavaScript). Open `index.html` directly in a browser.
