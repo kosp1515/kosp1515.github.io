@@ -11,6 +11,9 @@
   <meta property="og:description" content="Contact Nikos Kospanos about jobs, internships or collaborations.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    try {const t =localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t;} catch (e) {}
+  </script>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
@@ -21,7 +24,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="./">
         <span class="brand-mark" aria-hidden="true">NK</span>
         <span class="brand-text">
           <span class="brand-name">Nikos Kospanos</span>
@@ -42,7 +45,7 @@
       </button>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="./">Home</a></li>
           <li><a href="portfolio.html">Projects</a></li>
           <li><a href="photography.html">Photography</a></li>
           <li><a href="about.html">About</a></li>
